@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>wonderfull site</title>
+</head>
+<body>
+    <header>
+
+        <article class="avatarlogo">
+            <img src="images/avatar_logo.jpg">
+        </article>
+
+        <div class="nicklogodiv">
+            <h1 id="nicknamelogo">
+                Kamihate
+            </h1>
+        </div>
+
+        <div class="btns">
+            <button onclick="toggleModal()" type="button" id="my_bio">
+                about me
+            </button>
+
+            <button class="my_projects">
+
+                <div class="modal-background3"></div>
+
+                <div class="modal3">
+                    <h2>Мои проэкты</h2>
+                    <p>
+                    На гитхабе будут в будущем, когда переборю лень и подгружу проэктики на питоне и другие.
+                    </p>
+                </div>
+                Projects
+            </button>
+            
+            <button class="name">
+
+                <div class="modal-background2"></div>
+
+                <div class="modal2">
+                    <h2>Мои соц сети</h2>
+                    <p>
+                    <div>
+                        <img src="images/picsoul.jpg" alt="">
+                        <div class="socnetw">
+                            <p>Telegramm: geneticallyaltered</p>
+                            <p>Discord: fxckisdeath</p>
+                            <p>GitHub: justWestl3y</p>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+                My soc. networks
+            </button>
+
+            <div class="modal-background" onclick="toggleModal()"></div>
+
+            <div class="modal">
+                <h2>About me</h2>
+                <p>
+                Моя специализация: программист(3+ года), OSINT разведка(3+ года), ИБ(информационная безопастность), соц.инженерия.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="videologo">
+            <video id="background-video" autoplay loop controls>
+                <source src="images/video_2025-03-31_17-43-26.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
