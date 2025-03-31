@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+html, body{
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.avatarlogo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.avatarlogo img {
+    height: 350px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.nicklogodiv {
+    display: flex;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    padding: 15px 0 15px 0;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal2 h2 {
+    margin-bottom: 20px;
+}
+
+.modal2 p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.modal3 h2 {
+    margin-bottom: 20px;
+}
+
+.btns button {
+    text-decoration: none;
+    width: 20%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btns button:hover {
+    width: 25%;
+    height: 60px;
+    transition: 0.3s;
+}
+
+.modal-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1, 1);
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.socnetw {
+    font-weight: 400;
+    background-color: rgb(80, 83, 221);
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+body.open .modal-background{
+    visibility: visible;
+    opacity: 1;
+    animation: background-in 1s both;
+}
+
+.modal-background2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1, 1);
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.name.active .modal-background2{
+    visibility: visible;
+    opacity: 1;
+    animation: background-in2 1s both;
+}
+
+.modal-background3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1, 1);
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.my_projects.active .modal-background3{
+    visibility: visible;
+    opacity: 1;
+    animation: background-in2 1s both;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #37353b;
+    color: #f9f9f9;
+    padding: 48px 40px;
+    border-radius: 12px;
+    width: 300px;
+    translate: -50% -50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.modal2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #37353b;
+    color: #f9f9f9;
+    padding: 48px 40px;
+    border-radius: 12px;
+    width: 300px;
+    translate: -50% -50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.modal3{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #37353b;
+    color: #f9f9f9;
+    padding: 48px 40px;
+    border-radius: 12px;
+    width: 300px;
+    translate: -50% -50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+main {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+.modal h2 {
+    margin-bottom: 10px;
+}
+
+.videologo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 1000px;
+}
+
+.videologo video {
+    border-radius: 50px;
+}
+
+.name.active .modal2{
+    opacity: 1;
+    visibility: visible;
+    animation: modal-in2 1s;
+}
+
+.name .modal2{
+    opacity: 0;
+    visibility: hidden;
+    translate: -50% -50%;
+}
+
+.my_projects.active .modal3{
+    opacity: 1;
+    visibility: visible;
+    animation: modal-in2 1s;
+}
+
+.my_projects .modal3{
+    opacity: 0;
+    visibility: hidden;
+    translate: -50% -50%;
+}
+
+body.open .modal{
+    opacity: 1;
+    visibility: visible;
+    animation: modal-in 1s;
+}
+
+body.closed .modal{
+    opacity: 0;
+    visibility: hidden;
+    translate: -50% -50%;
+}
+
+@keyframes background-in {
+    0% {
+        scale: 0 0.005;
+    }
+    33% {
+        scale: 1 0.005;
+    }
+    66%, 100% {
+        scale: 1 1;
+    }
+}
+
+@keyframes background-in2 {
+    0% {
+        scale: 0 0.005;
+    }
+    33% {
+        scale: 1 0.005;
+    }
+    66%, 100% {
+        scale: 1 1;
+    }
+}
+
+@keyframes background-in3 {
+    0% {
+        scale: 0 0.005;
+    }
+    33% {
+        scale: 1 0.005;
+    }
+    66%, 100% {
+        scale: 1 1;
+    }
+}
+
+@keyframes modal-in{
+    0%, 66%{
+        opacity: 0;
+        visibility: hidden;
+        translate: -50% -30%;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes modal-in2{
+    0%, 66%{
+        opacity: 0;
+        visibility: hidden;
+        translate: -50% -30%;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes modal-in3 {
+    0%, 66%{
+        opacity: 0;
+        visibility: hidden;
+        translate: -50% -30%;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
